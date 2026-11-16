@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – AtibaExplainerVideos</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1f24; --muted:#57606a; --bg:#ffffff; --accent:#0b5cad; --line:#d0d7de; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --muted:#9aa4af; --bg:#0d1117; --accent:#58a6ff; --line:#30363d; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 20px 60px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; } h2 { margin-top:2rem; font-size:1.2rem; }
+  p.meta { color:var(--muted); margin-top:0; } a { color:var(--accent); } ul { padding-left:1.2rem; }
+  code { font-size:.9em; } footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">AtibaExplainerVideos &middot; Effective date: November 16, 2026</p>
+
+  <h2>1. Who operates this application</h2>
+  <p>AtibaExplainerVideos is a personal automation tool operated by the owner of the AtibaExplainerVideos YouTube channel. It is used only with the owner's own Google account and YouTube channel. It is not offered to, and does not collect data from, other users or viewers.</p>
+
+  <h2>2. Google user data the application accesses</h2>
+  <p>The application connects to the YouTube Data API through Google OAuth and requests these permissions:</p>
+  <ul>
+    <li><code>youtube.upload</code> &ndash; to upload videos produced by the application to the owner's channel (always as private) and to set their thumbnail.</li>
+    <li><code>youtube.force-ssl</code> &ndash; to read and update the privacy status of videos the application uploaded, only after the owner has reviewed and approved a video.</li>
+    <li><code>youtube.readonly</code> &ndash; to read the channel's name and the titles of its most recent uploads (up to 50), which is used to avoid uploading the same video twice.</li>
+  </ul>
+  <p>The application does not access viewers' data, comments, subscribers, analytics, or any other Google services.</p>
+
+  <h2>3. How the data is used</h2>
+  <ul>
+    <li>The channel name is used only to confirm that the correct channel is connected.</li>
+    <li>Recent upload titles are compared in memory with the title of a new video to prevent duplicates; they are not stored.</li>
+    <li>For videos the application uploads, it keeps a log in the owner's private code repository containing the video ID, title, upload time and privacy status, so the same video is never uploaded twice.</li>
+  </ul>
+  <p>Google user data is not sold, not used for advertising, and not shared with third parties. The application also uses Google Gemini (to draft and check scripts) and ElevenLabs (to create narration); these services receive only public historical source text and the video script, not YouTube account data.</p>
+
+  <h2>4. Storage of credentials</h2>
+  <p>The OAuth refresh token is stored in a local file on the owner's computer that is excluded from version control, and as an encrypted secret in the owner's private GitHub repository settings, which the automated daily job uses. It is kept until the owner revokes access or deletes it.</p>
+
+  <h2>5. Revoking access</h2>
+  <p>Access can be revoked at any time on the Google Account permissions page: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. After revocation the application can no longer access the YouTube channel.</p>
+
+  <h2>6. Google and YouTube policies</h2>
+  <p>This application uses YouTube API Services. By using it you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>7. Changes and contact</h2>
+  <p>If this policy changes, the updated version will be published on this page with a new effective date. Questions can be sent through <a href="https://github.com/atillabagci99">github.com/atillabagci99</a>.</p>
+
+  <footer><a href="index.html">Home</a> &middot; <a href="terms.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>
